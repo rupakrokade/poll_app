@@ -8,5 +8,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def index(request):
-    return HttpResponse("Hello, you are at Polls app")
+    return render(request,'polls/home.html')
 
+def contact(request):
+    return render(request, 'polls/basic.html', {'content':['You can contact me at','rupakrokade@gmail.com']})
