@@ -1,0 +1,10 @@
+{% extends "polls/header.html" %}
+
+{% block content %}
+<p> You can register here </p>
+<form method='POST'>
+{% csrf_token %}
+{{form.as_p}}
+<button type='submit'>Register</button>
+<form>
+{% endblock %}
