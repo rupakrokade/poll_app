@@ -1,3 +1,6 @@
 language: python
-rvm: 
+python: 
  - 2.7.12
+
+script:
+ - python manage.py runserver
